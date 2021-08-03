@@ -10,10 +10,18 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@expo/next-adapter": "^3.0.1",
+    "@types/babel__core": "^7.1.15",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-native": "0.64.12",
+    "babel-plugin-module-resolver": "^4.1.0",
     "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "^8.0.0"
+    "next-transpile-modules": "^8.0.0",
+    "typescript": "^4.3.5",
+    "typesync": "^0.8.0"
   },
   "scripts": {
+    "preinstall": "typesync || :",
     "start": "next dev",
     "android": "expo start --android",
     "ios": "expo start --ios",
