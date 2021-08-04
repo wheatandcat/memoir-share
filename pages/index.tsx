@@ -1,6 +1,7 @@
 // @generated: @expo/next-adapter@2.1.52
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import Text from "share/components/atoms/Text";
 
 export default function App() {
   return (

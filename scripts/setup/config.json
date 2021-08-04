@@ -1,0 +1,10 @@
+{
+  "baseUrl": "clone/memoir/src",
+  "dir": "share",
+  "copyFiles": [
+    "config/theme.ts",
+    "components/atoms/Text/",
+    "lib/styledSystem/"
+  ],
+  "ignoreFiles": ["stories.tsx", "__tests__"]
+}

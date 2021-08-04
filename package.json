@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.2.0",
+    "@expo-google-fonts/noto-sans-jp": "^0.2.0",
+    "@expo-google-fonts/roboto-condensed": "^0.2.0",
     "expo": "~42.0.0",
+    "expo-font": "~9.2.1",
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -21,6 +25,7 @@
     "typesync": "^0.8.0"
   },
   "scripts": {
+    "setup": "sh ./scripts/setup/setup.sh",
     "preinstall": "typesync || :",
     "start": "next dev",
     "android": "expo start --android",

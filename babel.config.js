@@ -9,6 +9,7 @@ module.exports = {
       {
         alias: {
           components: "./components",
+          share: "./share",
         },
       },
     ],
