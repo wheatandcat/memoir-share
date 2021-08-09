@@ -2,36 +2,10 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import DateCards, { Props } from "components/organisms/Memoir/DateCards";
-
-const item = () => ({
-  id: "1",
-  title: "買い物",
-  categoryID: 9,
-  date: "2021-01-01T00:00:00+09:00",
-  like: false,
-  dislike: false,
-  createdAt: "2021-01-01T00:00:00+09:00",
-  updatedAt: "2021-01-01T00:00:00+09:00",
-});
+import { items } from "__mockData__/item";
 
 const props = (): Props => ({
-  items: [
-    {
-      ...item(),
-      userID: "test",
-    },
-    {
-      ...item(),
-      id: "2",
-      userID: "test",
-    },
-    {
-      ...item(),
-      id: "3",
-      date: "2021-01-02T00:00:00+09:00",
-      userID: "test",
-    },
-  ],
+  items: items().map((v) => ({ ...v, userID: "test" })),
   pageInfo: {
     hasNextPage: false,
     endCursor: "",
@@ -50,7 +24,7 @@ const props = (): Props => ({
   ],
 });
 
-export default function App() {
+function App() {
   return (
     <View style={styles.container}>
       <DateCards {...props()} />
@@ -68,3 +42,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
+export default App;

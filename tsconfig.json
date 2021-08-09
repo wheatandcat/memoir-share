@@ -19,7 +19,8 @@
     "baseUrl": "./",
     "paths": {
       "components/*": ["components/*"],
-      "share/*": ["share/*"]
+      "share/*": ["share/*"],
+      "__mockData__/*": ["__mockData__/*"]
     },
     "typeRoots": ["node_modules/@types", "src/@types", "share/@types"]
   },

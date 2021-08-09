@@ -192,6 +192,7 @@ export default memo(DateCards);
 const styles = StyleSheet.create({
   root: {
     height: "100%",
+    width: "100%",
   },
   footer: {
     paddingTop: theme().space(2),
