@@ -39,7 +39,10 @@ glob(`./${config.baseUrl}/**/*`, (err, files) => {
 
           data = data
             .replace(/from 'lib/g, "from 'share/lib")
-            .replace(/from 'config/g, "from 'share/config");
+            .replace(/from 'config/g, "from 'share/config")
+            .replace(/from 'queries/g, "from 'share/queries")
+            .replace(/from 'components/g, "from 'share/components")
+            .replace(/.png/g, "@2x.png");
 
           fs.writeFile(to, data, (err) => {
             if (err) throw err;

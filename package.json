@@ -1,11 +1,15 @@
 {
   "dependencies": {
+    "@apollo/client": "^3.4.5",
     "@expo-google-fonts/inter": "^0.2.0",
     "@expo-google-fonts/noto-sans-jp": "^0.2.0",
     "@expo-google-fonts/roboto-condensed": "^0.2.0",
+    "dayjs": "^1.10.6",
     "expo": "~42.0.0",
     "expo-font": "~9.2.1",
     "next": "^11.0.1",
+    "next-fonts": "^1.5.1",
+    "next-images": "^1.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
@@ -13,12 +17,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@expo/next-adapter": "^3.0.1",
+    "@expo/next-adapter": "^3.0.4",
     "@types/babel__core": "^7.1.15",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "@types/react-native": "0.64.12",
     "babel-plugin-module-resolver": "^4.1.0",
+    "jest-expo": "^42.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-transpile-modules": "^8.0.0",
     "typescript": "^4.3.5",
@@ -27,12 +32,13 @@
   "scripts": {
     "setup": "sh ./scripts/setup/setup.sh",
     "preinstall": "typesync || :",
-    "start": "next dev",
+    "dev": "next dev",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "build": "next build"
+    "build": "next build",
+    "start": "next start"
   },
   "private": true
 }

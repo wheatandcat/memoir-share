@@ -10,8 +10,23 @@ module.exports = {
         alias: {
           components: "./components",
           share: "./share",
+          __mockData__: "./__mockData__",
         },
       },
     ],
+  ],
+  overrides: [
+    {
+      test: "./node_modules/react-native-reanimated/*",
+      plugins: ["@babel/plugin-proposal-class-properties"],
+    },
+    {
+      test: "./node_modules/@expo/vector-icons/*",
+      plugins: ["@babel/plugin-proposal-class-properties"],
+    },
+    {
+      test: "./node_modules/@expo-google-fonts/*",
+      plugins: ["@babel/plugin-proposal-class-properties"],
+    },
   ],
 };

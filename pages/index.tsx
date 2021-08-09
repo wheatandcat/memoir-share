@@ -1,12 +1,33 @@
 // @generated: @expo/next-adapter@2.1.52
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import Text from "share/components/atoms/Text";
+import DateCards, { Props } from "components/organisms/Memoir/DateCards";
+import { items } from "__mockData__/item";
 
-export default function App() {
+const props = (): Props => ({
+  items: items().map((v) => ({ ...v, userID: "test" })),
+  pageInfo: {
+    hasNextPage: false,
+    endCursor: "",
+  },
+  onItem: () => null,
+  onLoadMore: () => null,
+  loading: false,
+  startDate: "2020-01-01",
+  endDate: "2020-01-07",
+  users: [
+    {
+      id: "test",
+      displayName: "suzuki",
+      image: "https://placehold.jp/150x150.png",
+    },
+  ],
+});
+
+function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
+      <DateCards {...props()} />
     </View>
   );
 }
@@ -21,3 +42,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
+export default App;
