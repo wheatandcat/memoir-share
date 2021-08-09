@@ -4,7 +4,22 @@
   "copyFiles": [
     "config/theme.ts",
     "components/atoms/Text/",
-    "lib/styledSystem/"
+    "components/atoms/View/",
+    "components/atoms/Image/",
+    "components/atoms/Divider/",
+    "components/atoms/Category/",
+    "components/atoms/Loading/",
+    "components/molecules/User/",
+    "components/molecules/IconButton/",
+    "components/molecules/Memoir/Header",
+    "components/molecules/Memoir/DateText.tsx",
+    "components/organisms/Memoir/Card.tsx",
+    "lib/styledSystem/",
+    "lib/master.ts",
+    "lib/dayjs.ts",
+    "lib/utility.ts",
+    "queries/api/",
+    "@types/index.d.ts"
   ],
   "ignoreFiles": ["stories.tsx", "__tests__"]
 }
